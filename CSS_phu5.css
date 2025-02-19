@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Noto Sans",sans-serif;
+    margin: 24px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color:#E6E7E7 ;
+    padding: 12px 30px;
+}
+.header {
+    display: flex;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    height: 30px;
+    width: 50%;
+    color: #9F4A4B;
+    flex: 1;
+}
+.heading {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    height: 30px;
+    width: 50%;
+    background-color: #9F4A4B;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex: 4;
+    margin: 5px;
+    height: 150px;
+    width: 50%;
+    background-color: #9F4A4B;
+}
+.aside { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    margin: 5px;
+    height: 150px;
+    width: 50%;
+    background-color: #9F4A4B;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 10px;
+    width: 31%;
+    background-color: #9F4A4B;
+}
+@media screen and (max-width:767px) {
+    .body{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .container{
+        padding: 12px;
+        margin: 0px;
+    }
+    .main-item {
+        width: 100%; 
+    }
+    .heading{
+        margin: 10px 0px;
+        padding: 5px;
+        width: 100%;
+    }
+    .header{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .aside {
+        display: none;
+        width: 100%;
+    }
+    .item {
+        display: none;
+        width: 100%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .container{
+        padding: 12px;
+    }
+    .main{
+        flex-wrap: wrap;
+    }
+    .main-item {
+        flex: 2;
+    }
+    .aside {
+        flex: 1;
+    }
+    .item {
+        width: 48%;
+    }
+    
+}
