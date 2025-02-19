@@ -58,6 +58,7 @@ p{
     }
     .header{
         width: 100%;
+        width: 20%;
     }
     .footer{
         flex-wrap: wrap;
@@ -118,19 +119,5 @@ p{
         color: white;
         flex: 1;
         padding: 10px;
-    }
-    @media screen and (max-width:767px) {
-        .container{
-            flex-wrap: wrap;
-        }
-        .header{
-            width: 100%;
-        }
-        .footer{
-            flex-wrap: wrap;
-        }
-        .paragrap{
-            width: 100%;
-        }
     }
 }
